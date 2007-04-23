@@ -11,9 +11,9 @@ Url:		http://oss.zonio.net/libxr.htm
 Source0:	http://oss.zonio.net/releases/libxr/libxr-%{version}.tar.bz2
 BuildRequires:	flex
 BuildRequires:	bison
-BuildRequires:	glib-2.0	>= 2.12.0
-BuildRequires:	gthread-2.0	>= 2.12.0
-BuildRequires:	libxml-2.0	>= 2.6.20
+BuildRequires:	libglib2-devel	>= 2.12.0
+BuildRequires:	libxml2-devel	>= 2.6.20
+Buildrequires:	openssl-devel	>= 0.9.8e
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
