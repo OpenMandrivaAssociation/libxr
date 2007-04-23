@@ -11,6 +11,9 @@ Url:		http://oss.zonio.net/libxr.htm
 Source0:	http://oss.zonio.net/releases/libxr/libxr-%{version}.tar.bz2
 BuildRequires:	flex
 BuildRequires:	bison
+BuildRequires:	glib-2.0	>= 2.12.0
+BuildRequires:	gthread-2.0	>= 2.12.0
+BuildRequires:	libxml-2.0	>= 2.6.20
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -66,13 +69,11 @@ Development files for libxr.
 
 %files
 %defattr(644,root,root,755)
-%doc
 %attr(755,root,root) %{_bindir}/xdl-compiler
 %{_mandir}/man1/xdl-compiler.1.bz2
 
 %files -n %{libname}
 %defattr(644,root,root,755)
-%doc
 %attr(755,root,root) %{_libdir}/libxr.so.%{major}*
 
 %files -n %{libname}-devel
