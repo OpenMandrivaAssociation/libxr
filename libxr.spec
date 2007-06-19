@@ -1,10 +1,11 @@
 %define major 0
 %define libname %mklibname xr %{major}
+%define develname %mklibname xr -d
 
 Summary:	Cross-platform XML-RPC client/server library written in C
 Name:		libxr
 Version:	0.9.10
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	LGPL
 Group:		System/Libraries
 Url:		http://oss.zonio.net/libxr.htm
@@ -41,12 +42,13 @@ Group:		System/Libraries
 %description -n %{libname}
 Main library for libxr.
 
-%package -n %{libname}-devel
+%package -n %{develname}
 Summary:	Development files for libxr
 Group:		Development/C
 Requires:	%{name} = %{version}-%{release}
+Obsoletes:	%{libname}-devel
 
-%description -n %{libname}-devel
+%description -n %{develname}
 Development files for libxr.
 
 %prep
@@ -78,7 +80,7 @@ Development files for libxr.
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libxr.so.%{major}*
 
-%files -n %{libname}-devel
+%files -n %{develname}
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING NEWS README TODO
 %attr(755,root,root) %{_libdir}/libxr.la
