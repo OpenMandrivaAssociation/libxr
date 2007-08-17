@@ -74,7 +74,7 @@ Development files for libxr.
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/xdl-compiler
-%{_mandir}/man1/xdl-compiler.1.bz2
+%{_mandir}/man1/xdl-compiler.*
 
 %files -n %{libname}
 %defattr(644,root,root,755)
