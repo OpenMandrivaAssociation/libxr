@@ -4,9 +4,9 @@
 
 Summary:	Cross-platform XML-RPC client/server library written in C
 Name:		libxr
-Version:	0.9.10
-Release:	%mkrel 3
-License:	LGPL
+Version:	0.9.14
+Release:	%mkrel 1
+License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://oss.zonio.net/libxr.htm
 Source0:	http://oss.zonio.net/releases/libxr/libxr-%{version}.tar.bz2
@@ -46,7 +46,7 @@ Main library for libxr.
 Summary:	Development files for libxr
 Group:		Development/C
 Requires:	%{name} = %{version}-%{release}
-Obsoletes:	%{libname}-devel
+Obsoletes:	%mklibname %{name} 0 -d
 
 %description -n %{develname}
 Development files for libxr.
@@ -72,19 +72,19 @@ Development files for libxr.
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %files
-%defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/xdl-compiler
+%defattr(-,root,root)
+%{_bindir}/xdl-compiler
 %{_mandir}/man1/xdl-compiler.*
 
 %files -n %{libname}
-%defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libxr.so.%{major}*
+%defattr(-,root,root)
+%{_libdir}/libxr.so.%{major}*
 
 %files -n %{develname}
-%defattr(644,root,root,755)
+%defattr(-,root,root)
 %doc AUTHORS COPYING NEWS README TODO
-%attr(755,root,root) %{_libdir}/libxr.la
 %{_includedir}/libxr/*.h
 %{_libdir}/libxr.a
+%{_libdir}/libxr.la
 %{_libdir}/libxr.so
 %{_libdir}/pkgconfig/libxr.pc
