@@ -17,7 +17,6 @@ BuildRequires:	libxml2-devel	>= 2.6.20
 BuildRequires:	openssl-devel	>= 0.9.8e
 Requires:	%{libname} = %{version}-%{release}
 Requires:	%{develname} = %{version}-%{release}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Cross-platform XML-RPC client/server library written in C that supports 
