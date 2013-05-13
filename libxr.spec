@@ -13,7 +13,7 @@ Source0:	http://oss.zonio.net/releases/libxr/libxr-%{version}.tar.bz2
 BuildRequires:	flex
 BuildRequires:	bison
 BuildRequires:	libglib2-devel	>= 2.12.0
-BuildRequires:	libxml2-devel	>= 2.6.20
+BuildRequires:	pkgconfig(libxml-2.0)	>= 2.6.20
 BuildRequires:	openssl-devel	>= 0.9.8e
 BuildRequires:	re2c
 Requires:	%{libname} = %{version}-%{release}
