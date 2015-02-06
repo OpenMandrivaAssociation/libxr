@@ -5,7 +5,7 @@
 Summary:	Cross-platform XML-RPC client/server library written in C
 Name:		libxr
 Version:	1.0
-Release:	4
+Release:	5
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://oss.zonio.net/libxr.htm
