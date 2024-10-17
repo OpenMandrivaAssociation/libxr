@@ -8,7 +8,7 @@ Version:	1.0
 Release:	5
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://oss.zonio.net/libxr.htm
+Url:		https://oss.zonio.net/libxr.htm
 Source0:	http://oss.zonio.net/releases/libxr/libxr-%{version}.tar.bz2
 BuildRequires:	flex
 BuildRequires:	bison
