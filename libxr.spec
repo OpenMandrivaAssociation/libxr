@@ -10,6 +10,11 @@ License:	LGPLv2+
 Group:		System/Libraries
 Url:		https://oss.zonio.net/libxr.htm
 Source0:	http://oss.zonio.net/releases/libxr/libxr-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	flex
 BuildRequires:	bison
 BuildRequires:	libglib2-devel	>= 2.12.0
